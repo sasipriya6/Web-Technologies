@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>forms</title>
+    </head>
+    <body >
+        <style>
+            fieldset{
+                display: inline-block;
+                 text-align: left;
+
+            }
+            div{
+                text-align:center;
+             
+
+            }
+        </style>
+        <form>
+        <div><fieldset style="align-content:center;display:inline;">
+                <legend style="text-align: center;">Registration form</legend>
+            <label>First Name:</label><input type="text" name="First Name" required placeholder="Enter your first name"><br><br>
+           <label>Last Name:</label><input type="text" name="Last Name" required placeholder="Enter your last name"><br><br>
+            <label>select the courses:</label><br><br>
+            <input type="checkbox" name="java" ><label>java</label><br><br>
+           <input type="checkbox" name="python"><label>python</label><br><br>
+            <input type="checkbox" name="Data Structures"><label>Data structures</label><br><br>
+            <label> Phone : </label>  
+                <input type="text" name="country code"  value="+91" size="2">   
+                <input type="text" name="phone" size="10" required> <br><br>
+                <label>Address:</label><br><br>
+               <textarea></textarea><br><br>
+               <label>email:</label><input type="email" name=email" required placeholder="ABC@gmail.com"><br><br>
+              
+               Password:  
+              <input type="Password" id="password" name="password" required placeholder="Enter the password"> <br><br>
+                  Re-type password:  
+               <input type="Password" id="password" name="password" required placeholder="Reenter the password"> <br><br>  
+                <input type="submit" value="Submit"/>  
+               </fieldset>
+            </div>    
+        </form><br> 
+    </body>
+</html>

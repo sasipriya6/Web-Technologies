@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>flag</title>
+</head>
+<body>
+    <canvas id="myCanvas" style="border: 2px solid black;" height="600" width="1000"></canvas>
+    <script>
+            var c = document.getElementById("myCanvas");
+            var ct = c.getContext("2d");
+            ct.fillStyle = "blue"; 	
+			ct.fillRect(350,60,90,150);	
+			ct.fillStyle = "white"; 	
+			ct.fillRect(440,60,90,150);
+			ct.fillStyle = "red"; 
+			ct.fillRect(550,60,90,150);
+            ct.moveTo(350,60);
+			ct.lineTo(350,600);
+            ct.strokeStyle="brown";
+            ct.stroke();
+            ct.font="30px  Arial";
+			ct.fillText("FRANCE",400,30);
+    </script>
+
+</body>

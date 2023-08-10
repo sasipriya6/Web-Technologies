@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>canvas with different methods</title>
+    </head>
+    
+    <body>
+        <canvas id="mycanvas" width="500" height="450" style="border:2px solid black;margin-left:auto;margin-right:auto">
+            <script>
+                var c = document.getElementById("mycanvas"); 
+                var ct = c.getContext("2d"); 
+                ct.fillStyle="Yellow"
+                ct.fillRect(0,0,500,450);
+                ct.fillStyle="black"
+                ct.arc(200,200,40,0,2*Math.PI);
+                ct.fill();
+                ct.stroke();
+                ct.moveTo(0,0);  
+                ct.lineTo(600,800);  
+                ct.stroke();     
+                ct.font = "30px Arial";  
+                ct.fillText("Canvas",200,50);  
+
+        </script>
+
+        </canvas>
+    </body>
+</html>
